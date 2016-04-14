@@ -1,0 +1,10 @@
+# Object files
+*.o
+*.d
+*.crf
+*.dep
+*.map
+
+
+#Othes
+.chm
