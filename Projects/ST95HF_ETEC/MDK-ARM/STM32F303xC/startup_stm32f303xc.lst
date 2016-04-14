@@ -784,12 +784,12 @@ erwork --depend=stm32f303xc\startup_stm32f303xc.d -ostm32f303xc\startup_stm32f3
 ARM Macro Assembler    Page 13 
 
 
-03xc.o -ID:\dev\ST95HF\STM32F30x_DSP_StdPeriph_Lib_V1.2.3\MDK-ARM\RTE -IC:\Keil
-_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include -IC:\Keil_v5\ARM\PACK\Keil\STM32F3xx
-_DFP\1.3.0\Device\Include --predefine="__MICROLIB SETA 1" --predefine="__UVISIO
-N_VERSION SETA 518" --predefine="_RTE_ SETA 1" --predefine="STM32F303xC SETA 1"
- --list=.\stm32f303xc\startup_stm32f303xc.lst ..\Libraries\CMSIS\Device\ST\STM3
-2F30x\Source\Templates\arm\startup_stm32f303xc.s
+03xc.o -ID:\dev\ST95HF\STM32F3_ST95HF\Projects\ST95HF_ETEC\MDK-ARM\RTE -IC:\Kei
+l_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include -IC:\Keil_v5\ARM\PACK\Keil\STM32F3x
+x_DFP\1.3.0\Device\Include --predefine="__MICROLIB SETA 1" --predefine="__UVISI
+ON_VERSION SETA 518" --predefine="_RTE_ SETA 1" --predefine="STM32F303xC SETA 1
+" --list=.\stm32f303xc\startup_stm32f303xc.lst ..\..\..\Libraries\CMSIS\Device\
+ST\STM32F30x\Source\Templates\arm\startup_stm32f303xc.s
 
 
 
@@ -800,8 +800,8 @@ STACK 00000000
 
 Symbol: STACK
    Definitions
-      At line 40 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
+      At line 40 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
    Uses
       None
 Comment: STACK unused
@@ -809,8 +809,8 @@ Stack_Mem 00000000
 
 Symbol: Stack_Mem
    Definitions
-      At line 41 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
+      At line 41 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
    Uses
       None
 Comment: Stack_Mem unused
@@ -818,13 +818,13 @@ __initial_sp 00000400
 
 Symbol: __initial_sp
    Definitions
-      At line 42 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
+      At line 42 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
    Uses
-      At line 66 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
-      At line 376 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 66 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
+      At line 376 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 3 symbols
 
@@ -837,8 +837,8 @@ HEAP 00000000
 
 Symbol: HEAP
    Definitions
-      At line 51 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
+      At line 51 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
    Uses
       None
 Comment: HEAP unused
@@ -846,8 +846,8 @@ Heap_Mem 00000000
 
 Symbol: Heap_Mem
    Definitions
-      At line 53 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
+      At line 53 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
    Uses
       None
 Comment: Heap_Mem unused
@@ -855,21 +855,21 @@ __heap_base 00000000
 
 Symbol: __heap_base
    Definitions
-      At line 52 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
+      At line 52 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
    Uses
-      At line 377 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 377 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 Comment: __heap_base used once
 __heap_limit 00000200
 
 Symbol: __heap_limit
    Definitions
-      At line 54 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
+      At line 54 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
    Uses
-      At line 378 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 378 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 Comment: __heap_limit used once
 4 symbols
 
@@ -882,8 +882,8 @@ RESET 00000000
 
 Symbol: RESET
    Definitions
-      At line 61 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
+      At line 61 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
    Uses
       None
 Comment: RESET unused
@@ -891,25 +891,25 @@ __Vectors 00000000
 
 Symbol: __Vectors
    Definitions
-      At line 66 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
+      At line 66 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
    Uses
-      At line 62 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
-      At line 169 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 62 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
+      At line 169 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 __Vectors_End 00000188
 
 Symbol: __Vectors_End
    Definitions
-      At line 167 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 167 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 63 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
-      At line 169 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 63 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
+      At line 169 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 3 symbols
 
@@ -922,8 +922,8 @@ Relocatable symbols
 
 Symbol: .text
    Definitions
-      At line 171 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 171 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
       None
 Comment: .text unused
@@ -931,49 +931,49 @@ ADC1_2_IRQHandler 0000001A
 
 Symbol: ADC1_2_IRQHandler
    Definitions
-      At line 316 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 316 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 102 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 249 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 102 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 249 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 ADC3_IRQHandler 0000001A
 
 Symbol: ADC3_IRQHandler
    Definitions
-      At line 345 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 345 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 131 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 278 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 131 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 278 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 ADC4_IRQHandler 0000001A
 
 Symbol: ADC4_IRQHandler
    Definitions
-      At line 356 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 356 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 145 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 289 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 145 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 289 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 BusFault_Handler 0000000E
 
 Symbol: BusFault_Handler
    Definitions
-      At line 202 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 202 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 71 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
-      At line 203 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 71 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
+      At line 203 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 CAN1_RX1_IRQHandler 0000001A
 
@@ -985,61 +985,61 @@ Relocatable symbols
 
 Symbol: CAN1_RX1_IRQHandler
    Definitions
-      At line 319 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 319 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 105 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 252 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 105 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 252 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 CAN1_SCE_IRQHandler 0000001A
 
 Symbol: CAN1_SCE_IRQHandler
    Definitions
-      At line 320 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 320 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 106 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 253 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 106 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 253 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 COMP1_2_3_IRQHandler 0000001A
 
 Symbol: COMP1_2_3_IRQHandler
    Definitions
-      At line 357 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 357 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 148 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 290 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 148 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 290 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 COMP4_5_6_IRQHandler 0000001A
 
 Symbol: COMP4_5_6_IRQHandler
    Definitions
-      At line 358 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 358 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 149 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 291 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 149 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 291 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 COMP7_IRQHandler 0000001A
 
 Symbol: COMP7_IRQHandler
    Definitions
-      At line 359 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 359 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 150 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 292 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 150 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 292 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 DMA1_Channel1_IRQHandler 0000001A
 
@@ -1051,61 +1051,61 @@ Relocatable symbols
 
 Symbol: DMA1_Channel1_IRQHandler
    Definitions
-      At line 309 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 309 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 95 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
-      At line 242 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 95 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
+      At line 242 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 DMA1_Channel2_IRQHandler 0000001A
 
 Symbol: DMA1_Channel2_IRQHandler
    Definitions
-      At line 310 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 310 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 96 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
-      At line 243 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 96 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
+      At line 243 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 DMA1_Channel3_IRQHandler 0000001A
 
 Symbol: DMA1_Channel3_IRQHandler
    Definitions
-      At line 311 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 311 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 97 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
-      At line 244 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 97 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
+      At line 244 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 DMA1_Channel4_IRQHandler 0000001A
 
 Symbol: DMA1_Channel4_IRQHandler
    Definitions
-      At line 312 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 312 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 98 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
-      At line 245 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 98 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
+      At line 245 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 DMA1_Channel5_IRQHandler 0000001A
 
 Symbol: DMA1_Channel5_IRQHandler
    Definitions
-      At line 313 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 313 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 99 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
-      At line 246 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 99 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
+      At line 246 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 
 
@@ -1117,61 +1117,61 @@ DMA1_Channel6_IRQHandler 0000001A
 
 Symbol: DMA1_Channel6_IRQHandler
    Definitions
-      At line 314 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 314 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 100 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 247 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 100 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 247 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 DMA1_Channel7_IRQHandler 0000001A
 
 Symbol: DMA1_Channel7_IRQHandler
    Definitions
-      At line 315 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 315 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 101 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 248 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 101 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 248 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 DMA2_Channel1_IRQHandler 0000001A
 
 Symbol: DMA2_Channel1_IRQHandler
    Definitions
-      At line 351 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 351 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 140 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 284 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 140 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 284 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 DMA2_Channel2_IRQHandler 0000001A
 
 Symbol: DMA2_Channel2_IRQHandler
    Definitions
-      At line 352 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 352 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 141 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 285 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 141 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 285 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 DMA2_Channel3_IRQHandler 0000001A
 
 Symbol: DMA2_Channel3_IRQHandler
    Definitions
-      At line 353 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 353 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 142 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 286 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 142 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 286 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 
 
@@ -1183,44 +1183,44 @@ DMA2_Channel4_IRQHandler 0000001A
 
 Symbol: DMA2_Channel4_IRQHandler
    Definitions
-      At line 354 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 354 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 143 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 287 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 143 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 287 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 DMA2_Channel5_IRQHandler 0000001A
 
 Symbol: DMA2_Channel5_IRQHandler
    Definitions
-      At line 355 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 355 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 144 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 288 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 144 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 288 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 DebugMon_Handler 00000014
 
 Symbol: DebugMon_Handler
    Definitions
-      At line 216 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 216 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 78 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
-      At line 217 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 78 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
+      At line 217 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 Default_Handler 0000001A
 
 Symbol: Default_Handler
    Definitions
-      At line 229 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 229 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
       None
 Comment: Default_Handler unused
@@ -1228,13 +1228,13 @@ EXTI0_IRQHandler 0000001A
 
 Symbol: EXTI0_IRQHandler
    Definitions
-      At line 304 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 304 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 90 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
-      At line 237 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 90 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
+      At line 237 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 EXTI15_10_IRQHandler 0000001A
 
@@ -1246,61 +1246,61 @@ Relocatable symbols
 
 Symbol: EXTI15_10_IRQHandler
    Definitions
-      At line 338 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 338 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 124 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 271 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 124 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 271 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 EXTI1_IRQHandler 0000001A
 
 Symbol: EXTI1_IRQHandler
    Definitions
-      At line 305 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 305 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 91 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
-      At line 238 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 91 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
+      At line 238 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 EXTI2_TS_IRQHandler 0000001A
 
 Symbol: EXTI2_TS_IRQHandler
    Definitions
-      At line 306 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 306 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 92 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
-      At line 239 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 92 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
+      At line 239 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 EXTI3_IRQHandler 0000001A
 
 Symbol: EXTI3_IRQHandler
    Definitions
-      At line 307 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 307 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 93 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
-      At line 240 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 93 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
+      At line 240 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 EXTI4_IRQHandler 0000001A
 
 Symbol: EXTI4_IRQHandler
    Definitions
-      At line 308 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 308 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 94 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
-      At line 241 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 94 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
+      At line 241 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 
 
@@ -1312,61 +1312,61 @@ EXTI9_5_IRQHandler 0000001A
 
 Symbol: EXTI9_5_IRQHandler
    Definitions
-      At line 321 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 321 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 107 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 254 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 107 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 254 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 FLASH_IRQHandler 0000001A
 
 Symbol: FLASH_IRQHandler
    Definitions
-      At line 302 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 302 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 88 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
-      At line 235 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 88 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
+      At line 235 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 FPU_IRQHandler 0000001A
 
 Symbol: FPU_IRQHandler
    Definitions
-      At line 363 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 363 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 165 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 296 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 165 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 296 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 HardFault_Handler 0000000A
 
 Symbol: HardFault_Handler
    Definitions
-      At line 192 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 192 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 69 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
-      At line 193 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 69 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
+      At line 193 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 I2C1_ER_IRQHandler 0000001A
 
 Symbol: I2C1_ER_IRQHandler
    Definitions
-      At line 330 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 330 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 116 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 263 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 116 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 263 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 
 
@@ -1378,254 +1378,254 @@ I2C1_EV_IRQHandler 0000001A
 
 Symbol: I2C1_EV_IRQHandler
    Definitions
-      At line 329 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 329 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 115 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 262 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 115 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 262 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 I2C2_ER_IRQHandler 0000001A
 
 Symbol: I2C2_ER_IRQHandler
    Definitions
-      At line 332 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 332 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 118 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 265 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 118 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 265 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 I2C2_EV_IRQHandler 0000001A
 
 Symbol: I2C2_EV_IRQHandler
    Definitions
-      At line 331 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 331 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 117 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 264 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 117 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 264 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 MemManage_Handler 0000000C
 
 Symbol: MemManage_Handler
    Definitions
-      At line 197 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 197 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 70 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
-      At line 198 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 70 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
+      At line 198 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 NMI_Handler 00000008
 
 Symbol: NMI_Handler
    Definitions
-      At line 187 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 187 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 68 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
-      At line 188 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
+      At line 68 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
+      At line 188 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
 
 
 
 ARM Macro Assembler    Page 9 Alphabetic symbol ordering
 Relocatable symbols
 
-es\arm\startup_stm32f303xc.s
+emplates\arm\startup_stm32f303xc.s
 
 PVD_IRQHandler 0000001A
 
 Symbol: PVD_IRQHandler
    Definitions
-      At line 299 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 299 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 85 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
-      At line 232 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 85 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
+      At line 232 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 PendSV_Handler 00000016
 
 Symbol: PendSV_Handler
    Definitions
-      At line 220 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 220 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 80 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
-      At line 221 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 80 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
+      At line 221 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 RCC_IRQHandler 0000001A
 
 Symbol: RCC_IRQHandler
    Definitions
-      At line 303 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 303 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 89 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
-      At line 236 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 89 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
+      At line 236 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 RTC_Alarm_IRQHandler 0000001A
 
 Symbol: RTC_Alarm_IRQHandler
    Definitions
-      At line 339 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 339 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 125 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 272 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 125 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 272 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 RTC_WKUP_IRQHandler 0000001A
 
 Symbol: RTC_WKUP_IRQHandler
    Definitions
-      At line 301 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 301 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 87 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
+      At line 87 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
 
 
 
 ARM Macro Assembler    Page 10 Alphabetic symbol ordering
 Relocatable symbols
 
-      At line 234 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 234 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 Reset_Handler 00000000
 
 Symbol: Reset_Handler
    Definitions
-      At line 174 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 174 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 67 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
-      At line 175 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 67 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
+      At line 175 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 SPI1_IRQHandler 0000001A
 
 Symbol: SPI1_IRQHandler
    Definitions
-      At line 333 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 333 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 119 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 266 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 119 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 266 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 SPI2_IRQHandler 0000001A
 
 Symbol: SPI2_IRQHandler
    Definitions
-      At line 334 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 334 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 120 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 267 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 120 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 267 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 SPI3_IRQHandler 0000001A
 
 Symbol: SPI3_IRQHandler
    Definitions
-      At line 346 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 346 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 135 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 279 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 135 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 279 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 SVC_Handler 00000012
 
 Symbol: SVC_Handler
    Definitions
-      At line 211 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 211 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 77 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
+      At line 77 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
 
 
 
 ARM Macro Assembler    Page 11 Alphabetic symbol ordering
 Relocatable symbols
 
-s\arm\startup_stm32f303xc.s
-      At line 212 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+mplates\arm\startup_stm32f303xc.s
+      At line 212 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 SysTick_Handler 00000018
 
 Symbol: SysTick_Handler
    Definitions
-      At line 224 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 224 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 81 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
-      At line 225 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 81 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
+      At line 225 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 TAMPER_STAMP_IRQHandler 0000001A
 
 Symbol: TAMPER_STAMP_IRQHandler
    Definitions
-      At line 300 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 300 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 86 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
-      At line 233 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 86 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
+      At line 233 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 TIM1_BRK_TIM15_IRQHandler 0000001A
 
 Symbol: TIM1_BRK_TIM15_IRQHandler
    Definitions
-      At line 322 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 322 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 108 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 255 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 108 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 255 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 TIM1_CC_IRQHandler 0000001A
 
 Symbol: TIM1_CC_IRQHandler
    Definitions
-      At line 325 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 325 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 111 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 258 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 111 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 258 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 TIM1_TRG_COM_TIM17_IRQHandler 0000001A
 
 Symbol: TIM1_TRG_COM_TIM17_IRQHandler
    Definitions
-      At line 324 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 324 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
 
 
@@ -1633,65 +1633,65 @@ es\arm\startup_stm32f303xc.s
 ARM Macro Assembler    Page 12 Alphabetic symbol ordering
 Relocatable symbols
 
-      At line 110 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 257 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 110 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 257 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 TIM1_UP_TIM16_IRQHandler 0000001A
 
 Symbol: TIM1_UP_TIM16_IRQHandler
    Definitions
-      At line 323 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 323 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 109 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 256 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 109 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 256 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 TIM2_IRQHandler 0000001A
 
 Symbol: TIM2_IRQHandler
    Definitions
-      At line 326 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 326 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 112 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 259 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 112 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 259 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 TIM3_IRQHandler 0000001A
 
 Symbol: TIM3_IRQHandler
    Definitions
-      At line 327 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 327 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 113 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 260 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 113 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 260 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 TIM4_IRQHandler 0000001A
 
 Symbol: TIM4_IRQHandler
    Definitions
-      At line 328 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 328 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 114 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 261 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 114 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 261 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 TIM6_DAC_IRQHandler 0000001A
 
 Symbol: TIM6_DAC_IRQHandler
    Definitions
-      At line 349 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 349 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 
 
@@ -1699,124 +1699,124 @@ ARM Macro Assembler    Page 13 Alphabetic symbol ordering
 Relocatable symbols
 
    Uses
-      At line 138 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 282 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 138 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 282 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 TIM7_IRQHandler 0000001A
 
 Symbol: TIM7_IRQHandler
    Definitions
-      At line 350 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 350 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 139 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 283 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 139 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 283 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 TIM8_BRK_IRQHandler 0000001A
 
 Symbol: TIM8_BRK_IRQHandler
    Definitions
-      At line 341 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 341 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 127 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 274 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 127 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 274 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 TIM8_CC_IRQHandler 0000001A
 
 Symbol: TIM8_CC_IRQHandler
    Definitions
-      At line 344 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 344 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 130 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 277 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 130 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 277 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 TIM8_TRG_COM_IRQHandler 0000001A
 
 Symbol: TIM8_TRG_COM_IRQHandler
    Definitions
-      At line 343 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 343 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 129 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 276 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 129 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 276 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 TIM8_UP_IRQHandler 0000001A
 
 Symbol: TIM8_UP_IRQHandler
    Definitions
-      At line 342 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
+      At line 342 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
 
 
 
 ARM Macro Assembler    Page 14 Alphabetic symbol ordering
 Relocatable symbols
 
-es\arm\startup_stm32f303xc.s
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 128 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 275 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 128 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 275 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 UART4_IRQHandler 0000001A
 
 Symbol: UART4_IRQHandler
    Definitions
-      At line 347 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 347 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 136 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 280 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 136 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 280 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 UART5_IRQHandler 0000001A
 
 Symbol: UART5_IRQHandler
    Definitions
-      At line 348 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 348 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 137 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 281 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 137 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 281 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 USART1_IRQHandler 0000001A
 
 Symbol: USART1_IRQHandler
    Definitions
-      At line 335 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 335 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 121 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 268 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 121 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 268 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 USART2_IRQHandler 0000001A
 
 Symbol: USART2_IRQHandler
    Definitions
-      At line 336 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 336 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 122 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 269 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 122 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 269 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 USART3_IRQHandler 0000001A
 
@@ -1828,61 +1828,61 @@ Symbol: USART3_IRQHandler
 ARM Macro Assembler    Page 15 Alphabetic symbol ordering
 Relocatable symbols
 
-      At line 337 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 337 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 123 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 270 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 123 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 270 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 USBWakeUp_IRQHandler 0000001A
 
 Symbol: USBWakeUp_IRQHandler
    Definitions
-      At line 340 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 340 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 126 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 273 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 126 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 273 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 USBWakeUp_RMP_IRQHandler 0000001A
 
 Symbol: USBWakeUp_RMP_IRQHandler
    Definitions
-      At line 362 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 362 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 160 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 295 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 160 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 295 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 USB_HP_CAN1_TX_IRQHandler 0000001A
 
 Symbol: USB_HP_CAN1_TX_IRQHandler
    Definitions
-      At line 317 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 317 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 103 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 250 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 103 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 250 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 USB_HP_IRQHandler 0000001A
 
 Symbol: USB_HP_IRQHandler
    Definitions
-      At line 360 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 360 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 158 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 293 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 158 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 293 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 USB_LP_CAN1_RX0_IRQHandler 0000001A
 
@@ -1894,49 +1894,49 @@ ARM Macro Assembler    Page 16 Alphabetic symbol ordering
 Relocatable symbols
 
    Definitions
-      At line 318 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 318 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 104 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 251 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 104 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 251 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 USB_LP_IRQHandler 0000001A
 
 Symbol: USB_LP_IRQHandler
    Definitions
-      At line 361 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 361 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 159 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
-      At line 294 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 159 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
+      At line 294 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 UsageFault_Handler 00000010
 
 Symbol: UsageFault_Handler
    Definitions
-      At line 207 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 207 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 72 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
-      At line 208 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 72 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
+      At line 208 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 WWDG_IRQHandler 0000001A
 
 Symbol: WWDG_IRQHandler
    Definitions
-      At line 298 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 298 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 84 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
-      At line 231 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 84 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
+      At line 231 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 
 78 symbols
 
@@ -1949,31 +1949,31 @@ Heap_Size 00000200
 
 Symbol: Heap_Size
    Definitions
-      At line 49 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
+      At line 49 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
    Uses
-      At line 53 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
+      At line 53 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
 Comment: Heap_Size used once
 Stack_Size 00000400
 
 Symbol: Stack_Size
    Definitions
-      At line 38 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
+      At line 38 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
    Uses
-      At line 41 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
+      At line 41 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
 Comment: Stack_Size used once
 __Vectors_Size 00000188
 
 Symbol: __Vectors_Size
    Definitions
-      At line 169 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 169 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 64 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Template
-s\arm\startup_stm32f303xc.s
+      At line 64 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Te
+mplates\arm\startup_stm32f303xc.s
 Comment: __Vectors_Size used once
 3 symbols
 
@@ -1986,21 +1986,21 @@ SystemInit 00000000
 
 Symbol: SystemInit
    Definitions
-      At line 176 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 176 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 179 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 179 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 Comment: SystemInit used once
 __main 00000000
 
 Symbol: __main
    Definitions
-      At line 177 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 177 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
    Uses
-      At line 181 in file ..\Libraries\CMSIS\Device\ST\STM32F30x\Source\Templat
-es\arm\startup_stm32f303xc.s
+      At line 181 in file ..\..\..\Libraries\CMSIS\Device\ST\STM32F30x\Source\T
+emplates\arm\startup_stm32f303xc.s
 Comment: __main used once
 2 symbols
 430 symbols in table
