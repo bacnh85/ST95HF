@@ -22,6 +22,9 @@
 #ifndef _LIB_MANAGER_H
 #define _LIB_MANAGER_H
 
+/* Use ST95HF */
+#define ST95HF
+
 /* Includes -------------------------------------------------------------------------*/
 #if defined(ST95HF) || defined(RX95HF)
 	#include "lib_PICCemulator.h"

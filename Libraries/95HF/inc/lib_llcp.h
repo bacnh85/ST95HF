@@ -16,7 +16,7 @@
 #ifndef _LIB_LLCP_H
 #define _LIB_LLCP_H
 
-#include "stm32f10x.h"
+#include "stm32f30x.h"
 #include "lib_nfcdeptarget.h"
 #include "lib_nfcdepinitiator.h"
 #include <string.h>

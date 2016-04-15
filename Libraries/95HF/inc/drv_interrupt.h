@@ -42,21 +42,28 @@
 #define RFTRANS_95HF_SPI			     						SPI1
 #define RFTRANS_95HF_SPI_CLK		    					RCC_APB2Periph_SPI1
 
-#define RFTRANS_95HF_SPI_SCK_PIN        			GPIO_Pin_5                 
+#define RFTRANS_95HF_SPI_SCK_PIN        			GPIO_Pin_5
+#define RFTRANS_95HF_SPI_SCK_PINSOURCE				GPIO_PinSource5
 #define RFTRANS_95HF_SPI_SCK_GPIO_PORT   			GPIOA                       
-#define RFTRANS_95HF_SPI_SCK_GPIO_CLK    			RCC_APB2Periph_GPIOA 
+#define RFTRANS_95HF_SPI_SCK_GPIO_CLK    			RCC_AHBPeriph_GPIOA
+#define RFTRANS_95HF_SPI_CLK_AF						GPIO_AF_5
 	 
-#define RFTRANS_95HF_SPI_MISO_PIN        			GPIO_Pin_6                 
+#define RFTRANS_95HF_SPI_MISO_PIN        			GPIO_Pin_6
+#define RFTRANS_95HF_SPI_MISO_PINSOURCE				GPIO_PinSource6
 #define RFTRANS_95HF_SPI_MISO_GPIO_PORT  			GPIOA                       
-#define RFTRANS_95HF_SPI_MISO_GPIO_CLK   			RCC_APB2Periph_GPIOA 
-	 
-#define RFTRANS_95HF_SPI_MOSI_PIN        			GPIO_Pin_7                 
+#define RFTRANS_95HF_SPI_MISO_GPIO_CLK   			RCC_AHBPeriph_GPIOA
+#define RFTRANS_95HF_SPI_MISO_AF					GPIO_AF_5
+
+
+#define RFTRANS_95HF_SPI_MOSI_PIN        			GPIO_Pin_7
+#define RFTRANS_95HF_SPI_MOSI_PINSOURCE				GPIO_PinSource7
 #define RFTRANS_95HF_SPI_MOSI_GPIO_PORT  			GPIOA                       
-#define RFTRANS_95HF_SPI_MOSI_GPIO_CLK   			RCC_APB2Periph_GPIOA 
+#define RFTRANS_95HF_SPI_MOSI_GPIO_CLK   			RCC_AHBPeriph_GPIOA
+#define RFTRANS_95HF_SPI_MOSI_AF					GPIO_AF_5
 
 #define RFTRANS_95HF_SPI_NSS_PIN             	GPIO_Pin_4                  
 #define RFTRANS_95HF_SPI_NSS_GPIO_PORT       	GPIOA                       
-#define RFTRANS_95HF_SPI_NSS_GPIO_CLK        	RCC_APB2Periph_GPIOA 
+#define RFTRANS_95HF_SPI_NSS_GPIO_CLK        	RCC_AHBPeriph_GPIOA
 
 #define RFTRANS_95HF_SPI_DMA                	DMA1
 #define RFTRANS_95HF_SPI_DMA_CLK            	RCC_AHBPeriph_DMA1  
@@ -99,9 +106,9 @@
  * @brief  IRQout Interface pin PA2
  */ 
 #define IRQOUT_RFTRANS_95HF_PIN        				GPIO_Pin_2
-#define IRQOUT_RFTRANS_95HF_PIN_SOURCE        GPIO_PinSource2
+#define IRQOUT_RFTRANS_95HF_PIN_SOURCE        		GPIO_PinSource2
 #define IRQOUT_RFTRANS_95HF_GPIO_CLOCK				RCC_APB2Periph_GPIOA
-#define IRQOUT_RFTRANS_95HF_GPIO_PORT_SOURCE	GPIO_PortSourceGPIOA
+#define IRQOUT_RFTRANS_95HF_GPIO_PORT_SOURCE		GPIO_PortSourceGPIOA
 
 
 
@@ -145,17 +152,17 @@
 | appli timeout	|						0 					|		0								|	TIM4_IRQn					|
 |---------------|-----------------------|-------------------|-------------------|
  */
-#define EXTI_RFTRANS_95HF_PREEMPTION_PRIORITY	1
-#define EXTI_RFTRANS_95HF_SUB_PRIORITY				1
+#define EXTI_RFTRANS_95HF_PREEMPTION_PRIORITY			1
+#define EXTI_RFTRANS_95HF_SUB_PRIORITY					1
 #define EXTI_RFTRANS_95HF_IRQ_CHANNEL					EXTI3_IRQn
 
-#define TIMER_TIMEOUT_PREEMPTION_PRIORITY			0
+#define TIMER_TIMEOUT_PREEMPTION_PRIORITY				0
 #define TIMER_TIMEOUT_SUB_PRIORITY						0
-#define TIMER_TIMEOUT_IRQ_CHANNEL							TIM3_IRQn
+#define TIMER_TIMEOUT_IRQ_CHANNEL						TIM3_IRQn
 
 #define APPLI_TIMER_TIMEOUT_PREEMPTION_PRIORITY			0
-#define APPLI_TIMER_TIMEOUT_SUB_PRIORITY						1
-#define APPLI_TIMER_TIMEOUT_IRQ_CHANNEL							TIM4_IRQn
+#define APPLI_TIMER_TIMEOUT_SUB_PRIORITY				1
+#define APPLI_TIMER_TIMEOUT_IRQ_CHANNEL					TIM4_IRQn
 
 /** 
  * @brief  IRQ names 

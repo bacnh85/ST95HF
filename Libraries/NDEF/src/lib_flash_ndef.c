@@ -161,7 +161,7 @@ uint8_t writeNDEFToFlash(uint8_t *dataToWrite, uint32_t size, uint32_t address)
 	
 	/* Test the size of the image to be sent */
 	/* Image size is greater than Flash size */
-	if (!IS_FLASH_ADDRESS(size + FLASH_MAGIC_NUMBER_LENTH + address))
+	if (!IS_FLASH_PROGRAM_ADDRESS(size + FLASH_MAGIC_NUMBER_LENTH + address))
 	{
 		return FLASH_ERROR_SIZE;
 	}
@@ -170,7 +170,7 @@ uint8_t writeNDEFToFlash(uint8_t *dataToWrite, uint32_t size, uint32_t address)
 	FLASH_Unlock();
 	
 	/* Clear All pending flags */
-  FLASH_ClearFlag(FLASH_FLAG_EOP | FLASH_FLAG_PGERR | FLASH_FLAG_WRPRTERR);	
+	FLASH_ClearFlag(FLASH_FLAG_EOP | FLASH_FLAG_PGERR | FLASH_FLAG_WRPERR);
 	
 	/* Erase the needed pages where the user application will be loaded */
 	/* Define the number of page to be erased */

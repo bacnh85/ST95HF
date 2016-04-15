@@ -28,7 +28,7 @@
 
 /* Includes ------------------------------------------------------------------------------ */
 #include "lib_PICCEmulator.h"
-
+#include "drv_interrupt.h"
 
 /** @addtogroup _95HF_Libraries
  * 	@{

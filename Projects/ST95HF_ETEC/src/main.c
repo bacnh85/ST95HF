@@ -27,7 +27,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-
+#include "common.h"
 /** @addtogroup STM32F30x_StdPeriph_Templates
   * @{
   */
@@ -36,8 +36,38 @@
 /* Private define ------------------------------------------------------------*/
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
+
+static __IO uint32_t TimingDelay = 0;
+
+/* PCD/PICC global memory space */
+
+/* TT1 (PCD only)*/
+uint8_t TT1Tag[NFCT1_MAX_TAGMEMORY];
+
+/* TT2 */
+uint8_t TT2Tag[NFCT2_MAX_TAGMEMORY];
+
+/* TT3 */
+uint8_t TT3Tag[NFCT3_MAX_TAGMEMORY];
+uint8_t *TT3AttribInfo = TT3Tag, *TT3NDEFfile = &TT3Tag[NFCT3_ATTRIB_INFO_SIZE];
+
+/* TT4 */
+uint8_t CardCCfile [NFCT4_MAX_CCMEMORY];
+uint8_t CardNDEFfileT4A [NFCT4_MAX_NDEFMEMORY];
+uint8_t CardNDEFfileT4B [NFCT4_MAX_NDEFMEMORY];
+
+/* TT5 (PCD only)*/
+uint8_t TT5Tag[NFCT5_MAX_TAGMEMORY];
+
+__IO uint32_t SELStatus = 0;
+
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/
+
+
+
+
+
 
 /**
   * @brief  Main program.

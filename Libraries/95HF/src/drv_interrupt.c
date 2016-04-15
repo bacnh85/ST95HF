@@ -80,8 +80,9 @@ static void IRQOut_GPIO_Config( void )
 	GPIO_InitTypeDef GPIO_InitStructure;
 	
 	/* Configure IRQ pin as open drain output */
-	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_OD;
-	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
+	GPIO_InitStructure.GPIO_OType = GPIO_OType_OD;
+	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_Level_1;
 	GPIO_InitStructure.GPIO_Pin  = IRQOUT_RFTRANS_95HF_PIN;
 	GPIO_Init(GPIOA, &GPIO_InitStructure);
 	RFTRANS_95HF_IRQIN_HIGH() ;

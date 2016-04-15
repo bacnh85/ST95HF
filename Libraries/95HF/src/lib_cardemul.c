@@ -54,7 +54,7 @@ uint32_t								NbByteReceived ;
  * @brief  This buffer contains the data send/received by xx95HF
  */
 extern uint8_t								u95HFBuffer [RFTRANS_95HF_MAX_BUFFER_SIZE+3];
-extern uint8_t 								Firmware_Buffer[FIRMEWARE_SIZE];
+uint8_t 								Firmware_Buffer[FIRMEWARE_SIZE];  // extern
 
 uint32_t 							FileSize = 0;
 uint32_t 							FileSizeReceive = 0;

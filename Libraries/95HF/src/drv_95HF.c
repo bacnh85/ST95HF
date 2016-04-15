@@ -28,6 +28,8 @@
 
 /* Includes ------------------------------------------------------------------------------ */
 #include "drv_95HF.h"
+#include "drv_interrupt.h"
+#include "stm32f30x_conf.h"
 
 /** @addtogroup _95HF_Libraries
  * 	@{
@@ -92,13 +94,10 @@ static void drv95HF_SendUARTCommand		(uc8 *pData);
 static void drv95HF_RCCConfigSPI ( void )
 {	
 	/* Enable GPIO clock  */
-  RCC_APB2PeriphClockCmd( 	RFTRANS_95HF_SPI_SCK_GPIO_CLK  | 
-														RFTRANS_95HF_SPI_MISO_GPIO_CLK | 
-														RFTRANS_95HF_SPI_MOSI_GPIO_CLK , 
-														ENABLE);
+	RCC_AHBPeriphClockCmd(RFTRANS_95HF_SPI_SCK_GPIO_CLK  | RFTRANS_95HF_SPI_MISO_GPIO_CLK | RFTRANS_95HF_SPI_MOSI_GPIO_CLK , ENABLE);
 	
   /* Enable SPI clock  */
-  RCC_APB2PeriphClockCmd(RFTRANS_95HF_SPI_CLK, ENABLE);
+	RCC_APB2PeriphClockCmd(RFTRANS_95HF_SPI_CLK, ENABLE);
 
 #ifdef USE_DMA
 	/* Enable DMA1 or/and DMA2 clock */
@@ -116,24 +115,32 @@ static void drv95HF_GPIOConfigSPI(void)
 {
 	GPIO_InitTypeDef GPIO_InitStructure;
 	
-	/* Configure SPI pins: SCK, MISO and MOSI */
-	GPIO_InitStructure.GPIO_Pin 				= RFTRANS_95HF_SPI_SCK_PIN;
-	GPIO_InitStructure.GPIO_Speed 			= GPIO_Speed_50MHz;
-	GPIO_InitStructure.GPIO_Mode 				= GPIO_Mode_AF_PP;
+	/* SCK, MOSI, MISO as AF functions */
+	GPIO_PinAFConfig(RFTRANS_95HF_SPI_SCK_GPIO_PORT, RFTRANS_95HF_SPI_SCK_PINSOURCE, RFTRANS_95HF_SPI_CLK_AF);
+	GPIO_PinAFConfig(RFTRANS_95HF_SPI_MOSI_GPIO_PORT, RFTRANS_95HF_SPI_MOSI_PINSOURCE, RFTRANS_95HF_SPI_MOSI_AF);
+	GPIO_PinAFConfig(RFTRANS_95HF_SPI_MISO_GPIO_PORT, RFTRANS_95HF_SPI_MISO_PINSOURCE, RFTRANS_95HF_SPI_MISO_AF);
+
+	// Config GPIO
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
+	GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+	GPIO_InitStructure.GPIO_PuPd  = GPIO_PuPd_DOWN;
+	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+
+	/* SPI SCK pin configuration */
+	GPIO_InitStructure.GPIO_Pin = RFTRANS_95HF_SPI_SCK_PIN;
 	GPIO_Init(RFTRANS_95HF_SPI_SCK_GPIO_PORT, &GPIO_InitStructure);
-	
-	GPIO_InitStructure.GPIO_Pin 				= RFTRANS_95HF_SPI_MOSI_PIN;
+
+	/* SPI  MOSI pin configuration */
+	GPIO_InitStructure.GPIO_Pin =  RFTRANS_95HF_SPI_MOSI_PIN;
 	GPIO_Init(RFTRANS_95HF_SPI_MOSI_GPIO_PORT, &GPIO_InitStructure);
 
-
-	/*	GPIO_InitStructure.GPIO_Mode 			= GPIO_Mode_AF_PP; */
-	GPIO_InitStructure.GPIO_Mode 				= GPIO_Mode_IN_FLOATING;
-	GPIO_InitStructure.GPIO_Pin 				= RFTRANS_95HF_SPI_MISO_PIN;
+	/* SPI MISO pin configuration */
+	GPIO_InitStructure.GPIO_Pin = RFTRANS_95HF_SPI_MISO_PIN;
 	GPIO_Init(RFTRANS_95HF_SPI_MISO_GPIO_PORT, &GPIO_InitStructure);
 	
 	/* Configure I/O for Chip select */		
 	GPIO_InitStructure.GPIO_Pin   			= RFTRANS_95HF_SPI_NSS_PIN;
-	GPIO_InitStructure.GPIO_Mode  			= GPIO_Mode_Out_PP; 
+	GPIO_InitStructure.GPIO_Mode  			= GPIO_Mode_OUT;
 	GPIO_Init(RFTRANS_95HF_SPI_NSS_GPIO_PORT, &GPIO_InitStructure);
 	
 	/* SPI_NSS  = High Level  */
@@ -154,7 +161,7 @@ static void drv95HF_StructureConfigSPI ( void )
 
 	/* SPI Config master with NSS manages by software using the SSI bit*/
 	SPI_InitStructure.SPI_Mode 				= SPI_Mode_Master;
-  SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_64; 
+	SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_64;
 	SPI_InitStructure.SPI_NSS  				= SPI_NSS_Soft;
 	SPI_InitStructure.SPI_CPOL 				= SPI_CPOL_High;
 	SPI_InitStructure.SPI_CPHA 				= SPI_CPHA_2Edge;
