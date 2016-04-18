@@ -50,12 +50,12 @@
 
 /* Flags for PICC/PCD tracking  ----------------------------------------------------------*/
 #define	TRACK_NOTHING			0x00
-#define	TRACK_NFCTYPE1 		0x01 /* 0000 0001 */
-#define	TRACK_NFCTYPE2 		0x02 /* 0000 0010 */
-#define	TRACK_NFCTYPE3 		0x04 /* 0000 0100 */
-#define	TRACK_NFCTYPE4A 	0x08 /* 0000 1000 */
-#define	TRACK_NFCTYPE4B 	0x10 /* 0001 0000 */
-#define	TRACK_NFCTYPE5 		0x20 /* 0010 0000 */
+#define	TRACK_NFCTYPE1  		0x01 /* 0000 0001 */
+#define	TRACK_NFCTYPE2 			0x02 /* 0000 0010 */
+#define	TRACK_NFCTYPE3 			0x04 /* 0000 0100 */
+#define	TRACK_NFCTYPE4A 		0x08 /* 0000 1000 */
+#define	TRACK_NFCTYPE4B 		0x10 /* 0001 0000 */
+#define	TRACK_NFCTYPE5 			0x20 /* 0010 0000 */
 #define TRACK_ALL 				0xFF /* 1111 1111 */
 
 /* Flags for Initiator/Target tracking  ------------------------------------------------------*/

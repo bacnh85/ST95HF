@@ -20,7 +20,7 @@
 "stm32f303xc\lib_piccemulator.o"
 "stm32f303xc\lib_iso7816picc.o"
 "stm32f303xc\lib_nfctype2picc.o"
-"stm32f303xc\lib_nfctype4picc_1.o"
+"stm32f303xc\lib_nfctype4picc.o"
 "stm32f303xc\lib_cardemul.o"
 "..\..\..\Libraries\95HF\lib\DEMO_BOARD_ST95HF.lib"
 "stm32f303xc\lib_proprietaryp2p.o"

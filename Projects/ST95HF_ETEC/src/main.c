@@ -30,6 +30,7 @@
 #include "common.h"
 #include "lib_Configmanager.h"
 
+
 /* Private variables ---------------------------------------------------------*/
 
 static __IO uint32_t TimingDelay = 0;
@@ -107,6 +108,74 @@ void System_Init(void){
 	/* ST95HF HW Init */
 	ConfigManager_HWInit();
 }
+
+/**
+  * @brief  convert a ASCII coding byte to it's representing char.
+  * @param  pDataIn : pointer on the byte array to translate
+	* @param  NumberOfByte : the size of the array
+	* @param  pString : pointer on the string created
+  * @retval None
+  */
+void Hex2Char( u8* pDataIn, u16 NumberOfByte, char* pString )
+{
+	u8 data;
+	uint8_t i=0;
+
+	for(i=0; i<NumberOfByte; i++)
+	{
+		/* First char */
+		data = (*pDataIn & 0xF0)>>4;
+		if( data < 0x0A)
+			*pString = data + 0x30;  /* ASCII offset for number */
+		else
+			*pString = data + 0x37; 	/* ASCII offset for letter */
+
+		pString++;
+
+		/* Second char */
+		data = (*pDataIn & 0x0F);
+		if( data < 0x0A)
+			*pString = data + 0x30;  /* ASCII offset for number */
+		else
+			*pString = data + 0x37; 	/* ASCII offset for letter */
+
+		pString++;
+		pDataIn++;
+	}
+}
+
+/* Extern variables */
+extern uint8_t 					TagUID[10];
+extern ISO14443A_CARD 			ISO14443A_Card;
+extern ISO14443B_CARD 			ISO14443B_Card;
+extern FELICA_CARD 				FELICA_Card;
+extern uint8_t 					NDEF_Buffer [];
+
+/* Variables for the different modes */
+extern DeviceMode_t 		devicemode;
+extern TagType_t 			nfc_tagtype;
+
+void TagHunting(void){
+uint8_t status;
+static int8_t TagType = TRACK_NOTHING;
+bool FirstTagFounded = true;
+static char LastUIDFound[20] = {' '};
+bool NewTagDetected = false;
+
+	while(1){
+		// Scan for tag
+		TagType = ConfigManager_TagHunting(TRACK_ALL);
+
+		if(TagType != TRACK_NOTHING){
+			memcpy(LastUIDFound,TagUID, 8);
+
+			
+		}
+		
+		// Delay
+		delay_ms(1000);
+	}
+}
   
 
 /**
@@ -118,6 +187,8 @@ int main(void)
 {
 	/* Init RDIF */
 	System_Init();
+	
+	TagHunting();
 
 	/* Infinite loop */
 	while (1)
