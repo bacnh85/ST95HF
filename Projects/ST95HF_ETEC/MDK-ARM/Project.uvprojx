@@ -844,11 +844,6 @@
           </GroupOption>
           <Files>
             <File>
-              <FileName>DEMO_BOARD_ST95HF.lib</FileName>
-              <FileType>4</FileType>
-              <FilePath>..\..\..\Libraries\95HF\lib\DEMO_BOARD_ST95HF.lib</FilePath>
-            </File>
-            <File>
               <FileName>lib_proprietaryP2P.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\Libraries\95HF\src\lib_proprietaryP2P.c</FilePath>
@@ -987,6 +982,11 @@
               <FileName>lib_ConfigManager.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\Libraries\95HF\src\lib_ConfigManager.c</FilePath>
+            </File>
+            <File>
+              <FileName>DEMO_BOARD_ST95HF.lib</FileName>
+              <FileType>4</FileType>
+              <FilePath>..\..\..\Libraries\95HF\lib\DEMO_BOARD_ST95HF.lib</FilePath>
             </File>
           </Files>
         </Group>
