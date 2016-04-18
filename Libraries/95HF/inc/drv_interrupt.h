@@ -33,7 +33,7 @@
 
 /* flags -------------------------------------------------------------------- */
 //#ifndef CR95HF 
-#define SPI_INTERRUPT_MODE_ACTIVATED
+//#define SPI_INTERRUPT_MODE_ACTIVATED
 //#endif
 
 /** 
@@ -61,12 +61,12 @@
 #define RFTRANS_95HF_SPI_MOSI_GPIO_CLK   			RCC_AHBPeriph_GPIOA
 #define RFTRANS_95HF_SPI_MOSI_AF					GPIO_AF_5
 
-#define RFTRANS_95HF_SPI_NSS_PIN             	GPIO_Pin_4                  
-#define RFTRANS_95HF_SPI_NSS_GPIO_PORT       	GPIOA                       
-#define RFTRANS_95HF_SPI_NSS_GPIO_CLK        	RCC_AHBPeriph_GPIOA
+#define RFTRANS_95HF_SPI_NSS_PIN             		GPIO_Pin_4
+#define RFTRANS_95HF_SPI_NSS_GPIO_PORT       		GPIOA
+#define RFTRANS_95HF_SPI_NSS_GPIO_CLK        		RCC_AHBPeriph_GPIOA
 
-#define RFTRANS_95HF_SPI_DMA                	DMA1
-#define RFTRANS_95HF_SPI_DMA_CLK            	RCC_AHBPeriph_DMA1  
+#define RFTRANS_95HF_SPI_DMA                		DMA1
+#define RFTRANS_95HF_SPI_DMA_CLK            		RCC_AHBPeriph_DMA1
 	
 #define RFTRANS_95HF_SPI_Rx_DMA_Channel     	DMA1_Channel2
 #define RFTRANS_95HF_SPI_Rx_DMA_FLAG        	DMA1_FLAG_TC2
@@ -86,9 +86,14 @@
 #define RFTRANS_95HF_UART_TX_GPIO_PORT   			GPIOA                       
 #define RFTRANS_95HF_UART_TX_GPIO_CLK    			RCC_APB2Periph_GPIOA 
 	 
-#define RFTRANS_95HF_UART_RX_PIN        			GPIO_Pin_2                 
-#define RFTRANS_95HF_UART_RX_GPIO_PORT  			GPIOA                       
-#define RFTRANS_95HF_UART_RX_GPIO_CLK   			RCC_APB2Periph_GPIOA 
+//#define RFTRANS_95HF_UART_RX_PIN        			GPIO_Pin_2
+//#define RFTRANS_95HF_UART_RX_GPIO_PORT  			GPIOA
+//#define RFTRANS_95HF_UART_RX_GPIO_CLK   			RCC_APB2Periph_GPIOA
+
+// ETEC ST95HF RX as PC6
+#define RFTRANS_95HF_UART_RX_PIN        			GPIO_Pin_6
+#define RFTRANS_95HF_UART_RX_GPIO_PORT  			GPIOC
+#define RFTRANS_95HF_UART_RX_GPIO_CLK   			RCC_APB2Periph_GPIOC
 
 
 /** 

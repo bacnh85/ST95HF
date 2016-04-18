@@ -1,5 +1,5 @@
 --cpu Cortex-M4.fp
-"stm32f303xc\startup_stm32f303xc.o"
+"stm32f303xc\startup_stm32f303xe.o"
 "stm32f303xc\drv_95hf.o"
 "stm32f303xc\drv_interrupt.o"
 "stm32f303xc\drv_spi.o"

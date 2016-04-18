@@ -142,12 +142,14 @@ uint8_t SPI_SendReceiveByte(SPI_TypeDef* SPIx, uint8_t data)
 	while(SPI_I2S_GetFlagStatus(SPIx, SPI_I2S_FLAG_TXE) == RESET);
 
 	/* Send byte through the SPI1 peripheral */
+	//SPI_I2S_SendData16(SPIx, data);
 	SPI_SendData8(SPIx, data);
 
 	/* Wait for SPI1 data reception	*/
 	while(SPI_I2S_GetFlagStatus(SPIx, SPI_I2S_FLAG_RXNE) == RESET);
 
 	/* Read & return SPI1 received data	*/
+	//return SPI_I2S_ReceiveData16(SPIx);
 	return SPI_ReceiveData8(SPIx);
 }
 

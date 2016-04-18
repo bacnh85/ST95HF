@@ -820,7 +820,7 @@ erwork --depend=stm32f303xc\startup_stm32f303xe.d -ostm32f303xc\startup_stm32f3
 03xe.o -ID:\dev\ST95HF\STM32F3_ST95HF\Projects\ST95HF_ETEC\MDK-ARM\RTE -IC:\Kei
 l_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include -IC:\Keil_v5\ARM\PACK\Keil\STM32F3x
 x_DFP\1.3.0\Device\Include --predefine="__MICROLIB SETA 1" --predefine="__UVISI
-ON_VERSION SETA 518" --predefine="_RTE_ SETA 1" --predefine="STM32F303xC SETA 1
+ON_VERSION SETA 518" --predefine="_RTE_ SETA 1" --predefine="STM32F302xE SETA 1
 " --list=.\stm32f303xc\startup_stm32f303xe.lst ..\..\..\Libraries\CMSIS\Device\
 ST\STM32F30x\Source\Templates\arm\startup_stm32f303xe.s
 

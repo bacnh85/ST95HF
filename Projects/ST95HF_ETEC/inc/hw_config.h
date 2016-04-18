@@ -67,7 +67,7 @@
 /* Exported constants --------------------------------------------------------*/
 
 /** 
- * @brief  Communication Interface pin B1
+ * @brief  Communication Interface pin B1; Fake as there is no Interface pin
  */
 #define INTERFACE_PIN             						GPIO_Pin_1                  
 #define INTERFACE_GPIO_PORT       						GPIOB                   
@@ -77,17 +77,17 @@
 /* -------------------------------------------------------------------------- 
 * Delay TIMER configuration (ms)
 * -------------------------------------------------------------------------- */ 
-#define TIMER_DELAY														TIM2
+#define TIMER_DELAY												TIM2
 #define TIMER_DELAY_PERIOD										71
 #define TIMER_DELAY_PRESCALER									1000
-#define TIMER_DELAY_CLOCK											RCC_APB1Periph_TIM2
+#define TIMER_DELAY_CLOCK										RCC_APB1Periph_TIM2
 																						
 /* -------------------------------------------------------------------------- 
 * Delay TIMER configuration (µs)
 * --------------------------------------------------------------------------- */ 
-#define TIMER_US_DELAY												TIM2
+#define TIMER_US_DELAY											TIM2
 #define TIMER_US_DELAY_PERIOD									35
-#define TIMER_US_DELAY_PRESCALER							1
+#define TIMER_US_DELAY_PRESCALER								1
 #define TIMER_US_DELAY_CLOCK									RCC_APB1Periph_TIM2
 
 /** 
@@ -116,8 +116,8 @@
  */
 #define USB_HP_IRQ_HANDLER										USB_HP_CAN1_TX_IRQHandler
 #define USB_LP_IRQ_HANDLER										USB_LP_CAN1_RX0_IRQHandler
-#define TIMER_STANDALONE_IRQ_HANDLER 					TIM4_IRQHandler
-#define TIMER_DELAY_IRQ_HANDLER								TIM2_IRQHandler
+#define TIMER_STANDALONE_IRQ_HANDLER 							TIM4_IRQHandler
+#define TIMER_DELAY_IRQ_HANDLER									TIM2_IRQHandler
 
 
 /* Exported functions ------------------------------------------------------- */

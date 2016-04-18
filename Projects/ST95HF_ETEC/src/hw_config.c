@@ -64,23 +64,20 @@ static void TimerDelay_ms_Config( void )
 	/* -------------------------------------------------------------------------- 
 	 * Delay TIMER configuration
 	 * -------------------------------------------------------------------------- */
-	TIM_TimeBaseStructure.TIM_Period 					= TIMER_DELAY_PERIOD;      
-	TIM_TimeBaseStructure.TIM_Prescaler 			= TIMER_DELAY_PRESCALER; 	
+	TIM_TimeBaseStructure.TIM_Period 			= TIMER_DELAY_PERIOD;
+	TIM_TimeBaseStructure.TIM_Prescaler 		= TIMER_DELAY_PRESCALER;
 	TIM_TimeBaseStructure.TIM_ClockDivision 	= TIM_CKD_DIV1;    
 	TIM_TimeBaseStructure.TIM_CounterMode 		= TIM_CounterMode_Up;
 	TIM_TimeBaseInit(TIMER_DELAY, &TIM_TimeBaseStructure);
 	
 	TIM_UpdateRequestConfig(TIMER_DELAY, TIM_UpdateSource_Global);
-	
 	TIM_ClearITPendingBit(TIMER_DELAY, TIM_IT_Update);
 		
 	/* Enable TIMER Update interrupt */
 	TIM_ITConfig(TIMER_DELAY, TIM_IT_Update, ENABLE);
 
-
 	/* Disable timer	*/
 	TIM_Cmd(TIMER_DELAY, DISABLE);
-
 }
 
 /**
@@ -110,7 +107,6 @@ static void TimerDelay_us_Config( void )
 
 	/* Disable timer	*/
 	TIM_Cmd(TIMER_DELAY, DISABLE);
-
 }
 
 /**
@@ -129,40 +125,10 @@ static void TimerDelay_us_Config( void )
  */
 void Set_System(void)
 {
-  /*!  At this stage the microcontroller clock setting is already configured, 
-       this is done through SystemInit() function which is called from startup
-       file (startup_stm32f10x_xx.s) before to branch to application main.
-       To reconfigure the default setting of SystemInit() function, refer to
-       system_stm32f10x.c file
-     */ 
-#if defined(USB_USE_EXTERNAL_PULLUP)
-  GPIO_InitTypeDef  GPIO_InitStructure;
-#endif /* USB_USE_EXTERNAL_PULLUP */
-
-  /* Enable and Disconnect Line GPIO clock */
-  USB_Disconnect_Config();
 	
-	/* the following code allow to be deconnected from USB data */
-#if defined(USB_USE_EXTERNAL_PULLUP)
-  /* Enable the USB disconnect GPIO clock */
-  RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIO_DISCONNECT, ENABLE);
-
-  /* USB_DISCONNECT used as USB pull-up */
-  GPIO_InitStructure.GPIO_Pin = USB_DISCONNECT_PIN;
-  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
-  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_2MHz;
-  GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
-  GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
-  GPIO_Init(USB_DISCONNECT, &GPIO_InitStructure);  
-#endif /* USB_USE_EXTERNAL_PULLUP */  
-
 	/* PWR and BKP clocks selection ------------------------------------------*/
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_PWR, ENABLE);
 	
-#ifdef USE_MSD_DRIVE
-  /* MAL configuration */
-  MAL_Config();
-#endif /*USE_MSD_DRIVE*/	
 }
 
 /**
@@ -224,10 +190,10 @@ void Interrupts_Config (void)
 #ifdef SPI_INTERRUPT_MODE_ACTIVATED
 		/* Enable and set RF transceiver IRQ to the lowest priority */
   	NVIC_InitStructure.NVIC_IRQChannel 										= EXTI_RFTRANS_95HF_IRQ_CHANNEL; 
-		NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority 	= EXTI_RFTRANS_95HF_PREEMPTION_PRIORITY;
-		NVIC_InitStructure.NVIC_IRQChannelSubPriority 				= EXTI_RFTRANS_95HF_SUB_PRIORITY;
-		NVIC_InitStructure.NVIC_IRQChannelCmd 								= ENABLE;
-		NVIC_Init(&NVIC_InitStructure); 						
+	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority 	= EXTI_RFTRANS_95HF_PREEMPTION_PRIORITY;
+	NVIC_InitStructure.NVIC_IRQChannelSubPriority 				= EXTI_RFTRANS_95HF_SUB_PRIORITY;
+	NVIC_InitStructure.NVIC_IRQChannelCmd 								= ENABLE;
+	NVIC_Init(&NVIC_InitStructure);
 #endif /* SPI_INTERRUPT_MODE_ACTIVATED */
 
 	/* Enable and set TIMER IRQ used for timeout */
@@ -467,7 +433,7 @@ void delay_ms(uint16_t delay)
 	
 	TIM_SetCounter(TIMER_DELAY, 0);
 	/* TIM2 enable counter */
-  TIM_Cmd(TIMER_DELAY, ENABLE);
+	TIM_Cmd(TIMER_DELAY, ENABLE);
 	/* Wait for 'delay' milliseconds */
 	while(counter_delay_ms != 0);
 	/* TIM2 disable counter */

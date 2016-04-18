@@ -168,6 +168,10 @@ static void drv95HF_StructureConfigSPI ( void )
 
 	/* Init the SPI BRIDGE */
 	SPI_Init(RFTRANS_95HF_SPI, &SPI_InitStructure);
+
+	/* Config SPI FIFO */
+	SPI_RxFIFOThresholdConfig(RFTRANS_95HF_SPI,SPI_RxFIFOThreshold_QF);
+
 #ifdef USE_DMA
 	SPI_I2S_DMACmd(RFTRANS_95HF_SPI, SPI_I2S_DMAReq_Rx, ENABLE);
 	SPI_I2S_DMACmd(RFTRANS_95HF_SPI, SPI_I2S_DMAReq_Tx, ENABLE);
@@ -398,10 +402,12 @@ void drv95HF_InitilizeSerialInterface ( void )
 	if (drv95HF_GetInterfacePinState () != RFTRANS_95HF_INTERFACE_UART)
 	{
 		drv95HFConfig.uInterface = RFTRANS_95HF_INTERFACE_SPI;
+
 		/* -- Initialize SPI Interface -- */ 
 		drv95HF_InitializeSPI( );
+		
 		/* -- IRQout configuration PA2 to send pulse on USART_RX of 95HF device */
-		IRQOut_Config( );
+		//IRQOut_Config( );
 	}
 #ifdef CR95HF
 	else

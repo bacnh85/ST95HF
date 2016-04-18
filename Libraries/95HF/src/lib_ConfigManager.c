@@ -222,6 +222,8 @@ void ConfigManager_HWInit (void)
 	{
 		/* nothing to do, this is a trap for debug purpose you can use it to detect HW issue */
 		/* or GPIO config issue */
+		while(1);
+
 	}
 	
 	/* Retrieve the IC version of the chip */

@@ -28,13 +28,8 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "common.h"
-/** @addtogroup STM32F30x_StdPeriph_Templates
-  * @{
-  */
+#include "lib_Configmanager.h"
 
-/* Private typedef -----------------------------------------------------------*/
-/* Private define ------------------------------------------------------------*/
-/* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
 
 static __IO uint32_t TimingDelay = 0;
@@ -61,13 +56,58 @@ uint8_t TT5Tag[NFCT5_MAX_TAGMEMORY];
 
 __IO uint32_t SELStatus = 0;
 
-/* Private function prototypes -----------------------------------------------*/
-/* Private functions ---------------------------------------------------------*/
 
+/**
+ * @function: Power up RFID module
+ */
 
+void RFID_PowerUp(void){
+GPIO_InitTypeDef GPIO_InitStructure;
 
+	// Enable RCC
+	RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOD, ENABLE);
 
+	// Init PD11 as output
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
+	GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_11;
+	GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
+	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 
+	GPIO_Init(GPIOD, &GPIO_InitStructure);
+	
+	// Power up
+	GPIO_SetBits(GPIOD, GPIO_Pin_11);
+}
+
+/* Example to read tag */
+void System_Init(void){
+
+	/* Power up RFID board */
+	//RFID_PowerUp();
+
+	/* -- Configures Main system clocks & power */
+	Set_System();
+
+	/* Enable CRC periph used by application to compute CRC after download */
+	RCC_AHBPeriphClockCmd(RCC_AHBPeriph_CRC, ENABLE);
+
+/*------------------- Resources Initialization -----------------------------*/
+
+	/* configure the interuptions  */
+	Interrupts_Config();
+
+	/* configure the timers  */
+	Timer_Config( );
+
+	/* Configure systick in order to generate one tick every ms */
+	/* also used to generate pseudo random numbers (SysTick->VAL) */
+	SysTick_Config(SystemCoreClock / 1000);
+
+	/* ST95HF HW Init */
+	ConfigManager_HWInit();
+}
+  
 
 /**
   * @brief  Main program.
@@ -76,20 +116,13 @@ __IO uint32_t SELStatus = 0;
   */
 int main(void)
 {
-  /*!< At this stage the microcontroller clock setting is already configured, 
-       this is done through SystemInit() function which is called from startup
-       file (startup_stm32f30x.s) before to branch to application main.
-       To reconfigure the default setting of SystemInit() function, refer to
-       system_stm32f30x.c file
-     */ 
- 
-  /* Add your application code here
-     */
+	/* Init RDIF */
+	System_Init();
 
-  /* Infinite loop */
-  while (1)
-  {
-  }
+	/* Infinite loop */
+	while (1)
+	{
+	}
 }
 
 
